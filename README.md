@@ -47,3 +47,12 @@ The directory is expected to have a `pp.json`, which is expected to look somethi
 
 Files in `pp_files` will be preprocessed. Files in `copy_files` will not.
 Files which are included with the `include_file` directive (or the `css` directive with css) will be (recursively) preprocessed.
+
+## TODOs
+
+- [ ] Create preprocessed/copied/included files' parent directories automatically
+- [ ] Add support for dynamically/runtime-created preprocessor directives (Lua scripting? Shell scripts? Custom DSL? M4?)
+- [ ] JS preprocessing?
+- [ ] Allow for global preprocessor variables across multiple preprocessed files? (Including between filetypes?)
+- [ ] Allow for nested directives (evaluating inner first)
+- [ ] Better syntax/support for variables?
